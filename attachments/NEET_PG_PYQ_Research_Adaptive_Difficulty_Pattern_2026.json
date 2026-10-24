@@ -1,0 +1,483 @@
+{
+  "title": "NEET PG Public PYQ Research (2020–2026) and Adjustable-Difficulty Question Generator",
+  "schema_version": "2.0",
+  "research_date": "2026-10-24",
+  "language": "English",
+  "scope": "Verified exam mechanics and qualitatively assessed several PUBLIC third-party memory-based recall sources. This is a pattern analysis, not a complete extracted question bank, authenticated prior examination, or answer-key audit.",
+  "official_exam_pattern": {
+    "year": 2026,
+    "official_entry_point": "https://www.natboard.edu.in/viewnbeexam?exam=neetpg",
+    "government_confirmation": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293072&lang=2&reg=48",
+    "bulletin_quote_reported_by": "https://medicaldialogues.in/news/education/medical-admissions/neet-pg-2026-exam-pattern-changed-number-of-questions-reduced-from-200-to-180-174130",
+    "section_format_report": "https://medicine.careers360.com/articles/neet-pg-2026-section-wise-timed-format",
+    "questions": 180,
+    "prior_year_2025_questions": 200,
+    "question_type": "Single-best-answer multiple choice",
+    "options_per_question": 4,
+    "total_minutes": 210,
+    "sections": 5,
+    "questions_per_section": 36,
+    "minutes_per_section": 42,
+    "scoring": {
+      "correct": 4,
+      "incorrect": -1,
+      "unanswered": 0,
+      "maximum_marks": 720
+    },
+    "medium": "English",
+    "section_navigation": "Within current section review allowed; prior section locks at expiry; do not go back.",
+    "status": "2026 verified using Government of India announcement and quotations from the official NBEMS 2026 bulletin. Recheck NBEMS for any future-year changes."
+  },
+  "public_sources": [
+    {
+      "name": "NBEMS official examination entry",
+      "url": "https://www.natboard.edu.in/viewnbeexam?exam=neetpg",
+      "years": "2026",
+      "material": "Official bulletin navigation",
+      "access": "Official portal; may deny automated access",
+      "reliability": "high for official format, not a freely downloadable PYQ bank"
+    },
+    {
+      "name": "Govt of India Press Information Bureau",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293072&lang=2&reg=48",
+      "years": "2026",
+      "material": "Official confirmation of reduced 180 MCQs in 210 minutes",
+      "reliability": "high for question count and duration"
+    },
+    {
+      "name": "PrepLadder year-wise recall collection",
+      "url": "https://www.prepladder.com/neet-pg-study-material/previous-years-question-papers/neet-pg-previous-year-question-papers-of-last-5-years",
+      "years": "2018–2025",
+      "material": "Publicly presented MCQs and linked PDFs",
+      "access": "Readable page; download links may require steps",
+      "reliability": "commercial memory-based reconstruction; clinical answer verification needed",
+      "observed": [
+        "4-option conceptual factual questions",
+        "clinical vignettes",
+        "physiology mechanism",
+        "biochemistry enzyme and deficiency",
+        "image-based anatomy"
+      ]
+    },
+    {
+      "name": "Oncourse NEET PG 2025 archive",
+      "url": "https://getoncourse.ai/previous-year-papers/neet-pg/2025/",
+      "years": "2025",
+      "material": "175 questions displayed as site count; 19 subject labels; answer/explanation descriptions",
+      "access": "Paginated; a separate archive index reports slightly different count",
+      "reliability": "memory based; check for gaps, duplication, inconsistent counters"
+    },
+    {
+      "name": "Oncourse NEET PG 2024 archive",
+      "url": "https://getoncourse.ai/previous-year-papers/neet-pg/2024/",
+      "years": "2024",
+      "material": "240 questions claimed on this year page; includes duplicate subject labels in taxonomy",
+      "access": "Paginated",
+      "reliability": "memory based; categories not canonical"
+    },
+    {
+      "name": "Oncourse aggregate past-paper archive",
+      "url": "https://getoncourse.ai/previous-year-papers/neet-pg/",
+      "years": "2010–2025",
+      "material": "Landing page advertises 8023 recall questions over 14 years; likely includes historic exam systems and overlapping revisions",
+      "access": "Browse by year",
+      "reliability": "advertised totals not independently audited, 2025 page and index differ"
+    },
+    {
+      "name": "NEET PG 2026 Careers360 recall/topics",
+      "url": "https://medicine.careers360.com/articles/neet-pg-2026-question-paper-memory-based-with-solutions",
+      "years": "2026",
+      "material": "2026 recalled question concepts and subjects (not official questions)",
+      "access": "Article; linked downloadable resource may require registration",
+      "reliability": "2026 contemporaneous recollection, no authenticated keys",
+      "observed": [
+        "gene-disease association",
+        "mechanisms of action",
+        "neurological syndrome",
+        "clinical paediatrics",
+        "microbiology microscopy",
+        "biostatistics"
+      ]
+    },
+    {
+      "name": "NEETPGAI 2026 reconstruction",
+      "url": "https://neetpgai.com/previous-year-questions/2026",
+      "years": "2026",
+      "material": "Website advertises 30 reviewed reconstructed questions and topic labels",
+      "access": "Public preview; some content appears restricted",
+      "reliability": "self-described AI/SME-verified; not an official NBEMS audit"
+    },
+    {
+      "name": "NEETPGAI 2025 reconstruction",
+      "url": "https://neetpgai.com/previous-year-questions/2025",
+      "years": "2025",
+      "material": "Website advertises 260 reconstructed/variant questions across 19 subjects",
+      "access": "Public snippets and excerpts",
+      "reliability": "Cannot regard 260 as 260 unique official past exam items (official 2025 examination had 200)"
+    },
+    {
+      "name": "AglaSem 2020–2025 year-wise PDFs",
+      "url": "https://admission.aglasem.com/neet-pg-previous-year-question-paper/",
+      "years": "2020–2025",
+      "material": "Site-reported PDFs for multiple years",
+      "access": "Year-specific preview links",
+      "reliability": "Questions reconstructed and not an official full paper"
+    },
+    {
+      "name": "Collegedunia 2025 18-page PDF - low-trust negative example",
+      "url": "https://image-static.collegedunia.com/public/image/NEET_PG_2025_Question_Paper_with_Solutions_09c31bd65a76f1c0be512c73a96b2270.pdf",
+      "years": "2025",
+      "material": "18-page labelled memory-based PDF with some generic medical trivia and unrelated climate-science item on first page",
+      "access": "Direct PDF reviewed including visual page 1 and page 7",
+      "reliability": "LOW; do not treat as a true recalled exam paper or authoritative for topic weightage"
+    }
+  ],
+  "source_sample_findings": {
+    "sample_basis": "Searched and visually inspected publicly available 2025 PDF sample, read 2025 PrepLadder collection and 2025/2024 Oncourse archive pages, compared 2026 recalled concepts, checked exam pattern against official sources.",
+    "quantitative_claim_limit": "No original full 2026 paper or verified all-paper frequency histogram obtained; commercial advertised counts overlap and can exceed official exam length.",
+    "year_counts_on_selected_web_pages": {
+      "Oncourse_2025_page": 175,
+      "Oncourse_2024_page": 240,
+      "NEETPGAI_2026_page": 30,
+      "NEETPGAI_2025_page": 260
+    },
+    "counts_warning": "Numbers are website-index entries, not authenticated exam-item counts. The Oncourse aggregate landing page separately displays a different 2025 total; do not sum archives.",
+    "recall_topic_examples_paraphrased": [
+      "biochemical or genetic disease marker",
+      "inborn errors and metabolic mechanisms",
+      "microbiology organism identification and toxins",
+      "medicine diagnostic or management vignette",
+      "clinical pharmacology receptor or antidote",
+      "surgical/orthopaedic investigation and sign",
+      "OBG management decisions",
+      "paediatric genetic or electrolyte disorder",
+      "image-based anatomy/histopathology or radiology",
+      "PSM screening, relative risk or attributable risk"
+    ],
+    "qualitative_patterns": [
+      "short fact or mechanism MCQ",
+      "clinically oriented case with one dominant discriminator",
+      "two-step clinical and preclinical integration",
+      "radiology/pathology image-based identification",
+      "diagnostic next-test and safest-treatment question",
+      "drug mechanism, adverse event or antidote",
+      "biostatistics or epidemiology numerical inference",
+      "management priority and contraindication"
+    ],
+    "not_official_weightage": true
+  },
+  "subject_coverage": {
+    "subjects": [
+      "Anatomy",
+      "Physiology",
+      "Biochemistry",
+      "Pathology",
+      "Pharmacology",
+      "Microbiology",
+      "Forensic Medicine",
+      "Community Medicine / PSM",
+      "Medicine",
+      "Surgery",
+      "Obstetrics and Gynaecology",
+      "Paediatrics",
+      "Orthopaedics",
+      "Ophthalmology",
+      "ENT",
+      "Dermatology",
+      "Psychiatry",
+      "Anaesthesiology",
+      "Radiodiagnosis"
+    ],
+    "weights": "No verified NBEMS per-subject 2026 quotas from publicly audited official document. Use a balanced intentional mix rather than treat online recalled frequencies as official.",
+    "recommended_broad_domains": [
+      "Preclinical",
+      "Paraclinical",
+      "Clinical"
+    ],
+    "example_full_mock_weighting": "Use user-supplied exam-specific distribution or a clearly labelled proposed blueprint; no fabricated official subject percentages."
+  },
+  "quality_and_confidentiality": {
+    "memo": "NBEMS reportedly warned against compilation/circulation of candidate recall material in 2026; this artifact links publicly accessible pages and analyses patterns without reproducing full questions.",
+    "confidentiality_report": "https://indianexpress.com/article/education/neet-pg-2026-nbems-warns-against-sharing-recall-based-questions-10860518/",
+    "source_mislabelled_risk": "A PDF labeled 2025 NEET PG included an unrelated Earth climate question; the origin of such collections is not established.",
+    "answer_disagreements": "Do not accept online or AI-reviewed recall keys as independently validated. Explicitly flag uncertain or clinically dated keys.",
+    "2026_disclaimer": "2026 recall snippets vary in completeness and may be editorial reconstructions rather than candidate-authentic questions.",
+    "no_copyright_copy": "Only synthesize original questions and abstract skills; avoid copying third-party question text into the output."
+  },
+  "difficulty_engine": {
+    "engine_version": "2.0.0",
+    "purpose": "Control the intellectual difficulty of original practice MCQs independently of the actual exam format.",
+    "config": {
+      "difficulty_level": 3,
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "difficulty_intensity": 50,
+      "intensity_range": [
+        0,
+        100
+      ],
+      "mode": "challenge",
+      "allowed_modes": [
+        "exam_faithful",
+        "challenge",
+        "adaptive_practice"
+      ],
+      "topic": "mixed",
+      "question_count": 10,
+      "delivery": "one_by_one",
+      "show_answer_before_attempt": false,
+      "answer_review": "after_each_answer",
+      "language": "English",
+      "verify_medical_facts": true,
+      "user_overrides_exam_format": false
+    },
+    "difficulty_levels": {
+      "1": {
+        "label": "Foundation",
+        "reasoning_steps_range": [
+          1,
+          1
+        ],
+        "integration": "One standard concept",
+        "distractor_design": "Two plausible distractors, remainder straightforward",
+        "example_task": "Recognise a classic pattern or basic mechanism",
+        "stem_length_rule": "Usually short; include only relevant facts",
+        "target": "revision"
+      },
+      "2": {
+        "label": "Standard exam",
+        "reasoning_steps_range": [
+          1,
+          2
+        ],
+        "integration": "One or two linked concepts; a clear discriminator",
+        "distractor_design": "All clinically related, usually one close competitor",
+        "example_task": "Best diagnosis or next step with one decisive finding",
+        "stem_length_rule": "Short or moderate; concise",
+        "target": "representative exam-style practice"
+      },
+      "3": {
+        "label": "Hard",
+        "reasoning_steps_range": [
+          2,
+          3
+        ],
+        "integration": "Use paired mechanism and application, or diagnostic comparison",
+        "distractor_design": "Two closely competing alternatives, differing in a decisive cue",
+        "example_task": "Select investigation or management when options are superficially reasonable",
+        "stem_length_rule": "Concise or moderate, occasional longer case",
+        "target": "above-average competitive preparation"
+      },
+      "4": {
+        "label": "Very hard",
+        "reasoning_steps_range": [
+          3,
+          4
+        ],
+        "integration": "Link multiple domains, risk modifiers, timing, or interpretation",
+        "distractor_design": "Three or four credible options; decisive constraints hidden in genuine clinical facts",
+        "example_task": "Choose the safest option after interpreting clinical history, lab data and competing risks",
+        "stem_length_rule": "Length only when information contributes to the decision",
+        "target": "top-rank challenge; harder-than-typical-recall by design"
+      },
+      "5": {
+        "label": "Extreme",
+        "reasoning_steps_range": [
+          4,
+          5
+        ],
+        "integration": "Nested reasoning with competing diagnoses/actions, management sequencing, or exceptions",
+        "distractor_design": "Every alternative credible in a nearby scenario; one unequivocally correct for the actual facts",
+        "example_task": "Resolve two-way ambiguity with a discriminating finding and timing or safety nuance",
+        "stem_length_rule": "No irrelevant padding; complexity derives from reasoning not word count",
+        "target": "unvalidated super-exam challenge, NOT a claim of actual exam difficulty"
+      }
+    },
+    "fine_tuning": {
+      "difficulty_intensity_interpretation": "Within a chosen level, 0 is the easiest permissible case and 100 the hardest permissible case; level governs upper bounds on reasoning steps and prevents unsupported edge-case minutiae.",
+      "recommended_intensity": {
+        "exam_faithful": 40,
+        "challenge": 75,
+        "adaptive_practice": 50
+      },
+      "difficulty_increase_order": [
+        "make distractors closer while preserving a unique answer",
+        "increase the number of clinically relevant interacting constraints",
+        "require integrating at least two established facts",
+        "add genuine conditional decisions or time-sensitive prioritisation",
+        "add numerical or visual interpretation only when supported by real data/media"
+      ],
+      "never_increase_by": [
+        "missing information",
+        "undefined abbreviations",
+        "obscure unsupported trivia",
+        "artificially long stems",
+        "trick grammar",
+        "invalid drugs/doses",
+        "two equally defensible answer choices",
+        "fabricated images or guidelines"
+      ],
+      "floor_and_ceiling": "Do not go beyond the core MBBS/AMC candidate competency merely to make an item obscure; if level 5 cannot be created accurately on a topic, report limitation or choose another high-value competency."
+    },
+    "modes": {
+      "exam_faithful": {
+        "description": "Preserve official question type, subject domains, exam timing and exam-like difficulty distribution. User-selected global level is a target; do not claim it measures actual exam item parameters.",
+        "difficulty_mix_levels_1to5": [
+          0.08,
+          0.45,
+          0.35,
+          0.1,
+          0.02
+        ],
+        "allow_uniform_level_override": false
+      },
+      "challenge": {
+        "description": "Preserve official question types and five/four choices while using the chosen level for most items. It is intentionally harder or easier than a representative exam.",
+        "difficulty_mix_levels_1to5": "uniform requested difficulty +/- 1 for variety",
+        "allow_uniform_level_override": true
+      },
+      "adaptive_practice": {
+        "description": "Educational adaptation from observed answers, not official psychometrically calibrated CAT.",
+        "difficulty_mix_levels_1to5": "adjust from previous performance",
+        "allow_uniform_level_override": true
+      }
+    },
+    "adaptive_practice_rules": {
+      "start_at_requested_level": true,
+      "increase_if": "3 consecutively correct answers with appropriate reasoning",
+      "decrease_if": "2 consecutive incorrect answers or user reports guessing",
+      "step_size": 1,
+      "bounds": [
+        1,
+        5
+      ],
+      "do_not_adapt_from_one_guess": true,
+      "track": [
+        "difficulty_level",
+        "topic",
+        "answer_correct",
+        "confidence_optional",
+        "reasoning_error_type",
+        "response_time_optional"
+      ],
+      "disclaimer": "This is a teaching progression and is not equated to an official computerized adaptive test or a validated score."
+    },
+    "clinical_integrity_checks": [
+      "Resolve the question and identify the unique best answer before constructing distractors.",
+      "Independently re-check that the supplied stem contains adequate discriminating information.",
+      "For each incorrect option write the specific reason it fails in this scenario; revise if more than one is equally defensible.",
+      "Verify calculations, reference ranges, dosing, contraindications, clinical urgency and units.",
+      "For guideline-sensitive current recommendations, verify against authoritative locally applicable published guidance; flag any unverified detail.",
+      "Never treat a memory-based recall key or AI-generated explanation as an authoritative clinical reference.",
+      "Do not fabricate image, ECG, histology or radiology findings while claiming a real supplied image exists.",
+      "Randomise correct-option location across a batch and prevent answer-position clues.",
+      "Use original stems; do not copy or closely paraphrase protected third-party recall text.",
+      "If the item cannot be made both difficult and medically unambiguous, reduce difficulty or flag for human review."
+    ],
+    "generation_workflow": [
+      "Load this file and accept user config overrides only for editable fields.",
+      "Select exam-specific official-safe question format and blueprint constraints.",
+      "Choose competency and clinically valid correct concept first.",
+      "Choose difficulty level and intensity; implement clinically defensible levers.",
+      "Create stem + exam-appropriate options + correct key privately.",
+      "Run two-pass quality control including a second solution attempt and distractor challenge.",
+      "Show question alone when answer is withheld; reveal explanation after user answers.",
+      "Repeat; for mocks follow specified exam timing and section lock behaviour."
+    ],
+    "question_output_schema": {
+      "id": "unique-question-id",
+      "exam": "NEET PG",
+      "subject": "string",
+      "topic": "string",
+      "difficulty_level": 3,
+      "difficulty_intensity": 50,
+      "question_type": "exam-valid type",
+      "stem": "original question text",
+      "options": [
+        "option A",
+        "option B",
+        "option C",
+        "option D"
+      ],
+      "answerIndex": "integer 0-based for single-best-answer; null if multiple-correct",
+      "answerIndices": "array of 0-based ints only for multiple-correct; otherwise null",
+      "explanation": "rationale after answer",
+      "distractor_analysis": {
+        "A": "why right/wrong",
+        "B": "why right/wrong",
+        "C": "why right/wrong",
+        "D": "why right/wrong"
+      },
+      "reasoning_steps": [
+        "brief teaching-level steps (not private model scratchpad)"
+      ],
+      "critical_discriminator": "the decisive fact",
+      "calibration_status": "designed_level_not_empirically_calibrated",
+      "source_type": "original_generated_practice",
+      "medical_verification_status": "verified_with_reference_or_unverified",
+      "needs_human_review": false
+    },
+    "neetpg_specific_hardness_levers": {
+      "level_3": [
+        "distinguish two related drug mechanisms",
+        "differential diagnosis with one discriminant",
+        "single-step risk/statistic calculation"
+      ],
+      "level_4": [
+        "biochemistry to pathology to clinical presentation",
+        "diagnosis plus next best investigation or safest medicine",
+        "imaging paired with clinical information"
+      ],
+      "level_5": [
+        "three-domain integration",
+        "differential including plausible look-alikes and contradiction cue",
+        "time-sensitive treatment choice integrating pharmacology and patient safety"
+      ]
+    }
+  },
+  "exam_specific_constraints": {
+    "official_year": 2026,
+    "official_questions": 180,
+    "duration_minutes": 210,
+    "sections": 5,
+    "questions_per_section": 36,
+    "minutes_per_section": 42,
+    "answer_type": "one best answer",
+    "options_per_question": 4,
+    "multiple_correct_allowed": false,
+    "scoring": {
+      "+correct": 4,
+      "-incorrect": -1,
+      "unanswered": 0
+    },
+    "formats_allowed": [
+      "single_best_answer_with_four_options"
+    ],
+    "item_substyles": [
+      "clinical_vignette",
+      "short_conceptual",
+      "mechanism_of_action",
+      "image_interpretation_only_if_actual_image_available",
+      "investigation_or_management",
+      "epidemiology_calculation",
+      "except_negative_stem_when_unambiguous"
+    ],
+    "section_locking": true,
+    "source_time_adjustment": "200-question 2025 recall structure must not be used unmodified as the 2026 full mock exam format.",
+    "jurisdiction": "Indian MBBS/NMC curriculum and Indian clinical practice where a policy-specific answer is tested; latest clinically applicable standards as needed",
+    "advanced_reasoning_targets": [
+      "mechanism plus diagnostic implication",
+      "drug class versus specific indication in comorbidity",
+      "pathologic feature + genetic marker + diagnosis",
+      "clinical sign plus next step",
+      "epi metric with distractors representing other measures"
+    ],
+    "full_mock_mode": "Five timed sections, mixed subjects, 36 questions per section; challenge mode still retains four options and single-best-answer."
+  },
+  "generator_instructions": "You are creating ORIGINAL NEET PG practice MCQs from this JSON profile. Use difficulty_engine.config and exam_specific_constraints. Treat difficulty_level (integer 1..5) as an editable control and difficulty_intensity (0..100) as a fine adjustment. Honor mode: exam_faithful for blueprint-style distribution; challenge for predominantly chosen difficulty; adaptive_practice for educational progression based on user answers. NEVER change exam option count, correct-answer rules, timing, or navigational sections just because difficulty increases. Each item must be medically defensible with one unique best answer unless the exam explicitly permits multiple-correct. Generate original questions inspired by concepts and structures, not literal copied PYQs. Verify answer against appropriate references where needed. If delivery=one_by_one, ask one question and hide the key until candidate answers; then present clear rationale and why attractive distractors are wrong. Do not label difficulty as officially calibrated. Do not pretend a text-described image is a real image."
+}

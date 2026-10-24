@@ -1,0 +1,607 @@
+{
+  "title": "INI-CET Recall Research + Adjustable-Difficulty Question-Generation Specification",
+  "analysis_date": "2026-10-24",
+  "language": "English",
+  "purpose": "Research-public recall collections and derive a careful MCQ-generation specification; not a validated official exam-paper dataset.",
+  "source_integrity": {
+    "official_past_papers_publicly_released": false,
+    "material_type": "Memory-based and commercially reconstructed past-question recalls, with optional coaching-authored additions",
+    "verified_material": "Inspected an AIIMS official July 2026 prospectus, sampled a directly accessible 49-page May 2026 recall PDF including images, read a 2022 medicine recall document in text form, reviewed indexed year/subject breakdowns and short 2024 PDF samples.",
+    "not_done": "Did not acquire, audit, verify answer keys for, or calculate difficulty from every advertised online question; no statistical official difficulty or all-paper distribution is claimed.",
+    "cross_source_overlap_risk": "First questions of 2026 DigiNerve PDF and the Oncourse 2026 page display matching stems, so the two sources cannot be added together as distinct questions.",
+    "historical_naming_warning": "An archive advertising questions dating to 1994 can contain pre-INI-CET predecessor exam material; treat such items as historical medical entrance questions, not original INI-CET papers.",
+    "copyright_handling": "This file contains analytical patterns and citations/URLs, not an unlicensed compilation of third-party copyrighted question texts."
+  },
+  "official_exam_pattern": {
+    "source": "AIIMS New Delhi INI-CET July 2026 Part A Prospectus, PDF printed page 15",
+    "url": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2026/04/INICET-Part-A-Prospectus-July-2026-Session.pdf",
+    "mode": "computer-based test",
+    "question_count": 200,
+    "duration_minutes": 180,
+    "parts": 4,
+    "questions_per_part": 50,
+    "minutes_per_part": 45,
+    "question_formats_officially_named": [
+      "Single Correct Choice",
+      "Multiple Correct Choice"
+    ],
+    "scoring": {
+      "correct": 1,
+      "incorrect": -0.3333333333333333,
+      "unanswered": 0
+    },
+    "navigation": "Cannot enter prior or future parts; each part auto-submits at 45 minutes.",
+    "official_subject_weightages": "Not established by the prospectus reviewed; do not present online recall frequencies as official.",
+    "multiple_correct_scoring_note": "Do not invent partial-credit rules; follow current official instructions."
+  },
+  "online_collections": [
+    {
+      "name": "DigiNerve May 2026 memory-based PDF",
+      "url": "https://www.diginerve.com/blogs/wp-content/uploads/2026/05/INICET_May_2026_DigiNerve-new-01.pdf",
+      "year": 2026,
+      "direct_pdf_verified": true,
+      "pages": 49,
+      "contains_images": true,
+      "contains_answer_choices": true,
+      "reliability_note": "Reconstructed and unverified; original images can be viewed in PDF; at least one likely answer-key inconsistency identified."
+    },
+    {
+      "name": "Oncourse INI-CET recalled question index",
+      "url": "https://getoncourse.ai/previous-year-papers/ini-cet/",
+      "advertised_questions": 1233,
+      "advertised_years": 23,
+      "counts_2021_2026": {
+        "2021": 155,
+        "2022": 164,
+        "2023": 147,
+        "2024": 125,
+        "2025": 202,
+        "2026": 193
+      },
+      "reliability_note": "Publisher-reported counts, not independently audited and possible overlaps with DigiNerve. May include predecessor exams before 2020."
+    },
+    {
+      "name": "AglaSem May/November 2022 PDFs",
+      "url": "https://admission.aglasem.com/ini-cet-2022-question-paper/",
+      "year": 2022,
+      "advertised_pdf_documents": 37,
+      "may_subject_documents": 18,
+      "nov_subject_documents": 19,
+      "example_medicine_text_url": "https://docs.aglasem.com/view/5b37c544-c103-11ed-80a9-0a5e36bc6706",
+      "reliability_note": "Memory-based documents; some question stems and keys incomplete and linked PDF downloads may require the publisher viewer."
+    },
+    {
+      "name": "ReflexPrep selected session PYQs",
+      "url": "https://www.reflexprep.com/inicet-previous-year-questions",
+      "range": "2020-2025",
+      "reliability_note": "Explicitly labels certain questions as additional high-yield practice, which must not be counted as recalled PYQs."
+    },
+    {
+      "name": "CollegeDekho 2024 exam recalls (January 2025 session)",
+      "url": "https://static.collegedekho.com/media/uploads/2024/12/09/ini-cet-2024-january-2025-session-questionsmemory-based.pdf",
+      "listed_questions": 20,
+      "reliability_note": "Only selected answer(s), often no full distractor set; insufficient for faithful reconstructed MCQs."
+    },
+    {
+      "name": "CollegeDekho INI-CET January 2024 recall list",
+      "url": "https://static.collegedekho.com/media/uploads/2025/08/25/ini-cet-2024-january-question-paper.pdf",
+      "listed_questions": 15,
+      "reliability_note": "Stems only; some dental items, no options or answer key."
+    }
+  ],
+  "publisher_reported_subject_counts_2024_2026": {
+    "by_year": {
+      "2024": {
+        "Anatomy": 11,
+        "Anesthesiology": 3,
+        "Biochemistry": 11,
+        "Community Medicine": 2,
+        "Dental": 1,
+        "Dermatology": 1,
+        "ENT": 2,
+        "Forensic Medicine": 2,
+        "Internal Medicine": 18,
+        "Microbiology": 9,
+        "Obstetrics and Gynecology": 5,
+        "Ophthalmology": 6,
+        "Orthopaedics": 2,
+        "Pathology": 9,
+        "Pediatrics": 11,
+        "Pharmacology": 6,
+        "Physiology": 6,
+        "Psychiatry": 6,
+        "Radiology": 5,
+        "Surgery": 9
+      },
+      "2025": {
+        "Anatomy": 16,
+        "Anesthesiology": 2,
+        "Biochemistry": 12,
+        "Community Medicine": 16,
+        "Dermatology": 5,
+        "ENT": 5,
+        "Forensic Medicine": 10,
+        "Internal Medicine": 25,
+        "Microbiology": 13,
+        "Obstetrics and Gynecology": 5,
+        "Ophthalmology": 9,
+        "Orthopaedics": 4,
+        "Pathology": 10,
+        "Pediatrics": 12,
+        "Pharmacology": 16,
+        "Physiology": 12,
+        "Psychiatry": 6,
+        "Radiology": 7,
+        "Surgery": 17
+      },
+      "2026": {
+        "Anatomy": 8,
+        "Anesthesiology": 3,
+        "Biochemistry": 12,
+        "Community Medicine": 10,
+        "Dermatology": 8,
+        "ENT": 4,
+        "Forensic Medicine": 11,
+        "Internal Medicine": 17,
+        "Microbiology": 11,
+        "Obstetrics and Gynecology": 9,
+        "Ophthalmology": 6,
+        "Orthopaedics": 9,
+        "Pathology": 16,
+        "Pediatrics": 10,
+        "Pharmacology": 16,
+        "Physiology": 14,
+        "Psychiatry": 6,
+        "Radiology": 4,
+        "Surgery": 19
+      }
+    },
+    "combined_total": 520,
+    "totals_by_subject_descending": {
+      "Internal Medicine": 60,
+      "Surgery": 45,
+      "Pharmacology": 38,
+      "Anatomy": 35,
+      "Biochemistry": 35,
+      "Pathology": 35,
+      "Microbiology": 33,
+      "Pediatrics": 33,
+      "Physiology": 32,
+      "Community Medicine": 28,
+      "Forensic Medicine": 23,
+      "Ophthalmology": 21,
+      "Obstetrics and Gynecology": 19,
+      "Psychiatry": 18,
+      "Radiology": 16,
+      "Orthopaedics": 15,
+      "Dermatology": 14,
+      "ENT": 11,
+      "Anesthesiology": 8,
+      "Dental": 1
+    },
+    "top_subject_examples": [
+      "Internal Medicine",
+      "Surgery",
+      "Pharmacology",
+      "Anatomy",
+      "Biochemistry",
+      "Pathology",
+      "Microbiology",
+      "Pediatrics",
+      "Physiology",
+      "Community Medicine"
+    ],
+    "method_note": "Arithmetic aggregation of Oncourse site-wide indexed tags, not a probability sample or official per-paper subject blueprint; the 2024/2025/2026 collections may cover multiple exams per year."
+  },
+  "observed_question_families": [
+    {
+      "type": "Concise single-concept fact",
+      "example_theme": "Renin-release stimulus, drug class, embryological derivative",
+      "reasoning": "one-step, discrimination through nearby biochemical or anatomical alternatives"
+    },
+    {
+      "type": "Clinical-vignette interpretation",
+      "example_theme": "Congenital hypothyroidism in a newborn; optic neuritis differentiation",
+      "reasoning": "2-3 specific clinical findings determine one diagnosis"
+    },
+    {
+      "type": "Next-step management or investigation",
+      "example_theme": "Shoulder dystocia initial manoeuvre; suspected follicular neoplasm follow-up",
+      "reasoning": "timing, diagnosis versus treatment and safety priorities"
+    },
+    {
+      "type": "Original visual input",
+      "example_theme": "ECG, histology, skin lesion, anatomical label, radiology image",
+      "reasoning": "visual recognition integrated with clinical detail; original image indispensable"
+    },
+    {
+      "type": "Assertion and reason",
+      "example_theme": "Nested case-control interpretation or biological mechanism",
+      "reasoning": "assess truth of each proposition and causal explanatory link"
+    },
+    {
+      "type": "Match the following",
+      "example_theme": "Organ embryological origin, clinical sign-to-disease relationships",
+      "reasoning": "multiple matched pairs with plausible rearrangements"
+    },
+    {
+      "type": "Statement combination / multiple-correct",
+      "example_theme": "Hormone metabolic actions, seizure semiology",
+      "reasoning": "evaluate several statements and choose a combination or multiple correct choices"
+    },
+    {
+      "type": "Numerical and data interpretation",
+      "example_theme": "Odds ratio from 2x2 table; pharmacokinetic half-life; clinical scores",
+      "reasoning": "short arithmetic plus definition of terms and units"
+    },
+    {
+      "type": "EXCEPT, NOT and contraindication",
+      "example_theme": "Disease classification, safety/contraindications, drug mechanism",
+      "reasoning": "separate counterexamples from many true closely related facts"
+    }
+  ],
+  "quality_findings": [
+    {
+      "severity": "high",
+      "source": "DigiNerve May 2026 PDF p27 (PDF page index 26)",
+      "observation": "Primary amenorrhea, absent uterus, breast development, sparse pubic/axillary hair is keyed to MRKH, but the sparse-hair detail suggests androgen insensitivity; requires independent clinical review.",
+      "action": "Do not reuse publisher answer automatically."
+    },
+    {
+      "severity": "high",
+      "source": "DigiNerve May 2026 PDF p3 (PDF page index 2)",
+      "observation": "Fusion failure of maxillary and medial nasal processes is keyed to midline cleft lip; this is an apparent embryological mismatch that requires checking.",
+      "action": "Review anatomy against standard references before generating explanations."
+    },
+    {
+      "severity": "medium",
+      "source": "2022 Nov Medicine AglaSem text document",
+      "observation": "At least some answer keys are missing and several items rely on absent ECG figures in text mode.",
+      "action": "Mark incomplete recalled items as partial; do not invent source figures."
+    },
+    {
+      "severity": "medium",
+      "source": "CollegeDekho January 2025 session short PDF",
+      "observation": "20 listed recalls frequently show only an answer without full multiple choice options.",
+      "action": "Use for topic discovery; label new distractors assistant-generated."
+    },
+    {
+      "severity": "medium",
+      "source": "ReflexPrep subject lists",
+      "observation": "Some questions are self-labeled high-yield additions, not genuine recalled PYQs.",
+      "action": "Separate recall from newly authored practice."
+    },
+    {
+      "severity": "medium",
+      "source": "Oncourse and DigiNerve 2026 records",
+      "observation": "Overlapping question stems observed, e.g. opening anatomy and renin physiology examples.",
+      "action": "Deduplicate by normalized stems and clinical decision concept."
+    }
+  ],
+  "recommended_question_generator": {
+    "version": "inicet-v2-adjustable-difficulty",
+    "disclaimer": "The following parameters are a proposed harder-than-recall training design, not measured frequencies or an officially validated INI-CET blueprint.",
+    "language": "English",
+    "questions_per_full_mock": 200,
+    "sections": 4,
+    "questions_per_section": 50,
+    "minutes_per_section": 45,
+    "difficulty_distribution_proposed": {
+      "easy": 0.1,
+      "moderate": 0.35,
+      "hard": 0.4,
+      "very_hard": 0.15
+    },
+    "formats_required": [
+      "single_correct",
+      "multiple_correct",
+      "assertion_reason",
+      "match_following",
+      "clinical_vignette",
+      "image_interpretation_when_real_image_available",
+      "calculation",
+      "except_negative_stem"
+    ],
+    "source_imitation": "Abstract the decision mechanism and distractor logic; do not closely paraphrase or reproduce substantial third-party questions.",
+    "stem_length": "Mix concise direct questions with moderate-length and select long clinical cases. Length alone must not determine difficulty.",
+    "answer_options": "Typically 4 well-designed alternatives; support officially permitted multiple-correct types. Avoid automatically translating AMC five-option patterns into INI-CET.",
+    "distractors": "Same clinical category, mechanism, management tier, imaging choice or formula; no obviously absurd options.",
+    "high_difficulty_methods": [
+      "Two-step clinicopathological integration",
+      "Distinguish closely related drug mechanisms",
+      "Numerical interpretation with realistic distractors",
+      "Competing guideline-based next steps",
+      "Anatomical relationships viewed from different orientations",
+      "Image and vignette concordance",
+      "Avoid clues from option length or grammar"
+    ],
+    "subject_weighting": "Cover all core MBBS preclinical, paraclinical and clinical areas, but do not claim fixed official per-subject quotas. Allow user-configured weights; do not use biased internet recalls as the actual blueprint.",
+    "randomization": "Balance correct answer locations; vary question types across all four sections.",
+    "quality_assurance": [
+      "Explicit clinical reference verification",
+      "Ensure one unequivocal best answer or precisely defined multiple-correct keys",
+      "Preserve original images or create correctly labelled new visuals before asking visually dependent questions",
+      "Verify numerical answer and units",
+      "Independent solution and distractor review",
+      "Report uncertainty for contested/outdated facts"
+    ],
+    "answer_delivery": "During mock show question first; release answer, rationales and cited teaching points after response or at review, as requested.",
+    "scoring": {
+      "correct": 1,
+      "incorrect": -0.3333333333333333,
+      "unanswered": 0,
+      "multiple_correct_partial_credit": "not assumed"
+    },
+    "difficulty_control": "Use difficulty_engine.config.difficulty_level and difficulty_intensity, with challenge mode for harder-than-recall questions."
+  },
+  "schema_version": "2.0",
+  "difficulty_engine": {
+    "engine_version": "2.0.0",
+    "purpose": "Control the intellectual difficulty of original practice MCQs independently of the actual exam format.",
+    "config": {
+      "difficulty_level": 3,
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "difficulty_intensity": 50,
+      "intensity_range": [
+        0,
+        100
+      ],
+      "mode": "challenge",
+      "allowed_modes": [
+        "exam_faithful",
+        "challenge",
+        "adaptive_practice"
+      ],
+      "topic": "mixed",
+      "question_count": 10,
+      "delivery": "one_by_one",
+      "show_answer_before_attempt": false,
+      "answer_review": "after_each_answer",
+      "language": "English",
+      "verify_medical_facts": true,
+      "user_overrides_exam_format": false
+    },
+    "difficulty_levels": {
+      "1": {
+        "label": "Foundation",
+        "reasoning_steps_range": [
+          1,
+          1
+        ],
+        "integration": "One standard concept",
+        "distractor_design": "Two plausible distractors, remainder straightforward",
+        "example_task": "Recognise a classic pattern or basic mechanism",
+        "stem_length_rule": "Usually short; include only relevant facts",
+        "target": "revision"
+      },
+      "2": {
+        "label": "Standard exam",
+        "reasoning_steps_range": [
+          1,
+          2
+        ],
+        "integration": "One or two linked concepts; a clear discriminator",
+        "distractor_design": "All clinically related, usually one close competitor",
+        "example_task": "Best diagnosis or next step with one decisive finding",
+        "stem_length_rule": "Short or moderate; concise",
+        "target": "representative exam-style practice"
+      },
+      "3": {
+        "label": "Hard",
+        "reasoning_steps_range": [
+          2,
+          3
+        ],
+        "integration": "Use paired mechanism and application, or diagnostic comparison",
+        "distractor_design": "Two closely competing alternatives, differing in a decisive cue",
+        "example_task": "Select investigation or management when options are superficially reasonable",
+        "stem_length_rule": "Concise or moderate, occasional longer case",
+        "target": "above-average competitive preparation"
+      },
+      "4": {
+        "label": "Very hard",
+        "reasoning_steps_range": [
+          3,
+          4
+        ],
+        "integration": "Link multiple domains, risk modifiers, timing, or interpretation",
+        "distractor_design": "Three or four credible options; decisive constraints hidden in genuine clinical facts",
+        "example_task": "Choose the safest option after interpreting clinical history, lab data and competing risks",
+        "stem_length_rule": "Length only when information contributes to the decision",
+        "target": "top-rank challenge; harder-than-typical-recall by design"
+      },
+      "5": {
+        "label": "Extreme",
+        "reasoning_steps_range": [
+          4,
+          5
+        ],
+        "integration": "Nested reasoning with competing diagnoses/actions, management sequencing, or exceptions",
+        "distractor_design": "Every alternative credible in a nearby scenario; one unequivocally correct for the actual facts",
+        "example_task": "Resolve two-way ambiguity with a discriminating finding and timing or safety nuance",
+        "stem_length_rule": "No irrelevant padding; complexity derives from reasoning not word count",
+        "target": "unvalidated super-exam challenge, NOT a claim of actual exam difficulty"
+      }
+    },
+    "fine_tuning": {
+      "difficulty_intensity_interpretation": "Within a chosen level, 0 is the easiest permissible case and 100 the hardest permissible case; level governs upper bounds on reasoning steps and prevents unsupported edge-case minutiae.",
+      "recommended_intensity": {
+        "exam_faithful": 40,
+        "challenge": 75,
+        "adaptive_practice": 50
+      },
+      "difficulty_increase_order": [
+        "make distractors closer while preserving a unique answer",
+        "increase the number of clinically relevant interacting constraints",
+        "require integrating at least two established facts",
+        "add genuine conditional decisions or time-sensitive prioritisation",
+        "add numerical or visual interpretation only when supported by real data/media"
+      ],
+      "never_increase_by": [
+        "missing information",
+        "undefined abbreviations",
+        "obscure unsupported trivia",
+        "artificially long stems",
+        "trick grammar",
+        "invalid drugs/doses",
+        "two equally defensible answer choices",
+        "fabricated images or guidelines"
+      ],
+      "floor_and_ceiling": "Do not go beyond the core MBBS/AMC candidate competency merely to make an item obscure; if level 5 cannot be created accurately on a topic, report limitation or choose another high-value competency."
+    },
+    "modes": {
+      "exam_faithful": {
+        "description": "Preserve official question type, subject domains, exam timing and exam-like difficulty distribution. User-selected global level is a target; do not claim it measures actual exam item parameters.",
+        "difficulty_mix_levels_1to5": [
+          0.08,
+          0.45,
+          0.35,
+          0.1,
+          0.02
+        ],
+        "allow_uniform_level_override": false
+      },
+      "challenge": {
+        "description": "Preserve official question types and five/four choices while using the chosen level for most items. It is intentionally harder or easier than a representative exam.",
+        "difficulty_mix_levels_1to5": "uniform requested difficulty +/- 1 for variety",
+        "allow_uniform_level_override": true
+      },
+      "adaptive_practice": {
+        "description": "Educational adaptation from observed answers, not official psychometrically calibrated CAT.",
+        "difficulty_mix_levels_1to5": "adjust from previous performance",
+        "allow_uniform_level_override": true
+      }
+    },
+    "adaptive_practice_rules": {
+      "start_at_requested_level": true,
+      "increase_if": "3 consecutively correct answers with appropriate reasoning",
+      "decrease_if": "2 consecutive incorrect answers or user reports guessing",
+      "step_size": 1,
+      "bounds": [
+        1,
+        5
+      ],
+      "do_not_adapt_from_one_guess": true,
+      "track": [
+        "difficulty_level",
+        "topic",
+        "answer_correct",
+        "confidence_optional",
+        "reasoning_error_type",
+        "response_time_optional"
+      ],
+      "disclaimer": "This is a teaching progression and is not equated to an official computerized adaptive test or a validated score."
+    },
+    "clinical_integrity_checks": [
+      "Resolve the question and identify the unique best answer before constructing distractors.",
+      "Independently re-check that the supplied stem contains adequate discriminating information.",
+      "For each incorrect option write the specific reason it fails in this scenario; revise if more than one is equally defensible.",
+      "Verify calculations, reference ranges, dosing, contraindications, clinical urgency and units.",
+      "For guideline-sensitive current recommendations, verify against authoritative locally applicable published guidance; flag any unverified detail.",
+      "Never treat a memory-based recall key or AI-generated explanation as an authoritative clinical reference.",
+      "Do not fabricate image, ECG, histology or radiology findings while claiming a real supplied image exists.",
+      "Randomise correct-option location across a batch and prevent answer-position clues.",
+      "Use original stems; do not copy or closely paraphrase protected third-party recall text.",
+      "If the item cannot be made both difficult and medically unambiguous, reduce difficulty or flag for human review."
+    ],
+    "generation_workflow": [
+      "Load this file and accept user config overrides only for editable fields.",
+      "Select exam-specific official-safe question format and blueprint constraints.",
+      "Choose competency and clinically valid correct concept first.",
+      "Choose difficulty level and intensity; implement clinically defensible levers.",
+      "Create stem + exam-appropriate options + correct key privately.",
+      "Run two-pass quality control including a second solution attempt and distractor challenge.",
+      "Show question alone when answer is withheld; reveal explanation after user answers.",
+      "Repeat; for mocks follow specified exam timing and section lock behaviour."
+    ],
+    "question_output_schema": {
+      "id": "unique-question-id",
+      "exam": "INI-CET",
+      "subject": "string",
+      "topic": "string",
+      "difficulty_level": 3,
+      "difficulty_intensity": 50,
+      "question_type": "exam-valid type",
+      "stem": "original question text",
+      "options": [
+        "option A",
+        "option B",
+        "option C",
+        "option D"
+      ],
+      "answerIndex": "integer 0-based for single-best-answer; null if multiple-correct",
+      "answerIndices": "array of 0-based ints only for multiple-correct; otherwise null",
+      "explanation": "rationale after answer",
+      "distractor_analysis": {
+        "A": "why right/wrong",
+        "B": "why right/wrong",
+        "C": "why right/wrong",
+        "D": "why right/wrong"
+      },
+      "reasoning_steps": [
+        "brief teaching-level steps (not private model scratchpad)"
+      ],
+      "critical_discriminator": "the decisive fact",
+      "calibration_status": "designed_level_not_empirically_calibrated",
+      "source_type": "original_generated_practice",
+      "medical_verification_status": "verified_with_reference_or_unverified",
+      "needs_human_review": false
+    },
+    "ini_specific_hardness_levers": {
+      "level_3": [
+        "integrated pathophysiology",
+        "matching similar pathways or classifications"
+      ],
+      "level_4": [
+        "interpret two modalities",
+        "clinical+preclinical integration",
+        "multi-statement traps with independently assessable truth values"
+      ],
+      "level_5": [
+        "three-domain integration",
+        "nonobvious exception supported by canonical principle",
+        "complex but precisely stated numerical or image interpretation"
+      ]
+    }
+  },
+  "exam_specific_constraints": {
+    "official_pattern_ref": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2026/04/INICET-Part-A-Prospectus-July-2026-Session.pdf",
+    "question_count": 200,
+    "total_minutes": 180,
+    "sections": 4,
+    "questions_per_section": 50,
+    "minutes_per_section": 45,
+    "officially_permitted_answer_types": [
+      "single_correct",
+      "multiple_correct"
+    ],
+    "multiple_correct_allowed": true,
+    "answer_format_note": "Assertion/reason, match-the-following and multi-statement items may be presented within officially permitted answer-choice types. Do not claim they are separately defined exam modalities.",
+    "scoring": {
+      "correct": 1,
+      "incorrect": -0.3333333333333333,
+      "unanswered": 0,
+      "multiple_correct_partial_credit": "Do not assume; apply only if confirmed by official rules."
+    },
+    "four_option_default": true,
+    "options_per_question": 4,
+    "image_based_rules": "Include only actual readable embedded/retrieved user-authorised images or fully specified text/diagram descriptions if not presenting as image interpretation.",
+    "subject_weights": "No verified official per-subject quotas; cover all core 19 MBBS subjects and integration; any practice distribution is a proposal, not an official weight.",
+    "navigation": "Four independent timed sections; no return to earlier sections.",
+    "hardness_levers": [
+      "two or more linked basic-science and clinical concepts",
+      "closely related embryology or anatomy structures",
+      "pathology pattern plus genetics or immunohistochemistry",
+      "drug mechanisms plus clinical contraindication",
+      "epidemiology biostatistics with units and interpretations",
+      "imaging with tissue correlation"
+    ]
+  },
+  "generator_instructions": "You are creating ORIGINAL INI-CET practice MCQs from this JSON profile. Use difficulty_engine.config and exam_specific_constraints. Treat difficulty_level (integer 1..5) as an editable control and difficulty_intensity (0..100) as a fine adjustment. Honor mode: exam_faithful for blueprint-style distribution; challenge for predominantly chosen difficulty; adaptive_practice for educational progression based on user answers. NEVER change exam option count, correct-answer rules, timing, or navigational sections just because difficulty increases. Each item must be medically defensible with one unique best answer unless the exam explicitly permits multiple-correct. Generate original questions inspired by concepts and structures, not literal copied PYQs. Verify answer against appropriate references where needed. If delivery=one_by_one, ask one question and hide the key until candidate answers; then present clear rationale and why attractive distractors are wrong. Do not label difficulty as officially calibrated. Do not pretend a text-described image is a real image."
+}

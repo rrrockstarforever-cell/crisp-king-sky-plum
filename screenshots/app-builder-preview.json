@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Pulse Med",
+      "hasCanvas": false,
+      "bodyTextLen": 1554,
+      "bodyTextHash": "fc490b1a1c93bb48191cac3cfba203c9f4fd5224339b71503839510d62c6dc10",
+      "bodyTextPrefix": "P PULSE MED PRO Postgraduate Exam Engine NEET-PG INI-CET AMC CAT",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Pulse Med",
+      "hasCanvas": false,
+      "bodyTextLen": 1153,
+      "bodyTextHash": "ab68905dc2d2b97474b820413dc176a411d5ff4944008e4abfb461f0d6b33b1d",
+      "bodyTextPrefix": "PULSE MED ⌘K Performance Analytics › Accuracy & Subject Matrix C",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

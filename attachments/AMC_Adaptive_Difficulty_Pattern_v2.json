@@ -1,0 +1,512 @@
+{
+  "title": "AMC Part 1: Uploaded Bank Analysis + Adjustable-Difficulty Question-Generation Specification",
+  "generated_on": "2026-10-24",
+  "banks": {
+    "AMC SUCCESS": {
+      "source_file": "AMC-SUCCESS-bank.json",
+      "structure": {
+        "total_items": 1170,
+        "five_option_items": 192,
+        "two_or_three_option_items": 736,
+        "zero_option_items": 0,
+        "median_stem_words": 24.0,
+        "median_explanation_words": 25.0,
+        "empty_explanations": 336,
+        "invalid_or_missing_key": 0,
+        "review_flagged": 0,
+        "embedded_images": 0,
+        "answer_positions_0_based": {
+          "0": 479,
+          "1": 381,
+          "2": 206,
+          "3": 82,
+          "4": 22
+        },
+        "word_count_under_40": 931,
+        "age_explicit_count": 231
+      },
+      "difficulty_labels": {
+        "unknown": 1170
+      },
+      "limitations": [
+        "Reconstructed recalls: provenance does not establish official AMC status",
+        "Missing extended stems and answer options in some questions",
+        "Explanations may contradict supplied answer keys",
+        "Automatic classification, not hand checked",
+        "No embedded image data"
+      ]
+    },
+    "eMedici": {
+      "source_file": "eMedici-bank.json",
+      "structure": {
+        "total_items": 1992,
+        "five_option_items": 1941,
+        "two_or_three_option_items": 0,
+        "zero_option_items": 10,
+        "median_stem_words": 118.0,
+        "median_explanation_words": 305.0,
+        "empty_explanations": 20,
+        "invalid_or_missing_key": 24,
+        "review_flagged": 100,
+        "embedded_images": 333,
+        "answer_positions_0_based": {
+          "0": 369,
+          "1": 462,
+          "2": 437,
+          "3": 396,
+          "4": 304,
+          "None": 24
+        },
+        "word_count_under_40": 14,
+        "age_explicit_count": 1694
+      },
+      "difficulty_labels": {
+        "medium": 1146,
+        "hard": 729,
+        "easy": 117
+      },
+      "groups": {
+        "Adult Health - Surgery": 236,
+        "Adult Health - Medicine": 1124,
+        "Child Health": 174,
+        "Women’s Health - O&G": 288,
+        "Mental Health": 141,
+        "Population Health & Ethics": 29
+      },
+      "topics": {
+        "Neurology": 179,
+        "Endocrinology": 52,
+        "Adult Health - Medicine": 298,
+        "Cardiology": 563,
+        "Gastroenterology and Hepatology": 318,
+        "Child Health": 56,
+        "Women’s Health - O&G": 77,
+        "Respiratory": 107,
+        "Adult Health - Surgery": 34,
+        "Musculoskeletal": 100,
+        "Infectious Diseases": 85,
+        "Mental Health": 48,
+        "Nephrology": 62,
+        "Population Health & Ethics": 13
+      },
+      "review_issues": {
+        "Question refers to an image but the figure could not be reliably extracted": 41,
+        "Answer marker needs checking against source": 24,
+        "Option extraction needs checking against source": 51
+      },
+      "limitations": [
+        "All entries explicitly label reference verification unverified",
+        "Difficulty tier is estimated, not calibrated",
+        "Metadata contains some demonstrable topic misclassifications",
+        "Some image references are missing and some MCQ options or answer markers need review"
+      ]
+    }
+  },
+  "combined": {
+    "total_items": 3162,
+    "cross_bank_exact_duplication": "Not established; similar clinical scenarios occur, but differing stem length makes lexical-only matching incomplete"
+  },
+  "official_amc_blueprint": {
+    "source": "https://www.amc.org.au/wp-content/uploads/2025/09/2025-09-09-MCQ-Specifications-V8.pdf",
+    "total_questions": 150,
+    "session_minutes": 210,
+    "options_per_question": 5,
+    "questions_are_adaptive": true,
+    "domain_weight_percent": {
+      "Adult Health - Medicine": 30,
+      "Adult Health - Surgery": 20,
+      "Women’s Health - O&G": 12.5,
+      "Child Health": 12.5,
+      "Mental Health": 12.5,
+      "Population Health & Ethics": 12.5
+    },
+    "format": "One best answer, clinical decision-making, no backtracking"
+  },
+  "eMedici_vs_blueprint": [
+    {
+      "domain": "Adult Health - Medicine",
+      "emedici_count": 1124,
+      "emedici_pct": 56.4,
+      "official_amc_pct": 30
+    },
+    {
+      "domain": "Adult Health - Surgery",
+      "emedici_count": 236,
+      "emedici_pct": 11.8,
+      "official_amc_pct": 20
+    },
+    {
+      "domain": "Women’s Health - O&G",
+      "emedici_count": 288,
+      "emedici_pct": 14.5,
+      "official_amc_pct": 12.5
+    },
+    {
+      "domain": "Child Health",
+      "emedici_count": 174,
+      "emedici_pct": 8.7,
+      "official_amc_pct": 12.5
+    },
+    {
+      "domain": "Mental Health",
+      "emedici_count": 141,
+      "emedici_pct": 7.1,
+      "official_amc_pct": 12.5
+    },
+    {
+      "domain": "Population Health & Ethics",
+      "emedici_count": 29,
+      "emedici_pct": 1.5,
+      "official_amc_pct": 12.5
+    }
+  ],
+  "sample_items_requiring_clinical_review": [
+    {
+      "id": "success-02b8d6a4d6",
+      "concern": "Menopausal laboratory testing selected despite explanation advocating clinical diagnosis without routine FSH; stem/options cannot provide a clear guideline-concordant answer"
+    },
+    {
+      "id": "success-1559c04ef0",
+      "concern": "Severe symptomatic aortic stenosis explanation recommends valve replacement while keyed choice is valvulotomy; options not well aligned with modern care"
+    },
+    {
+      "id": "success-88aa793781",
+      "concern": "In young collapse with family sudden death, 2D echo keyed despite explanation noting ECG generally first-line; exact clinical intent ambiguous"
+    },
+    {
+      "id": "emedici-3e9f568378fcac29e0",
+      "concern": "Parkinson disease wearing-off case is tagged under Cardiology; topic classification misleading"
+    }
+  ],
+  "question_generation_profile": {
+    "purpose": "Create original high-quality AMC-style practice questions inspired by structural patterns, not claim genuine exam recalls or certification",
+    "item_type": "Five-option single-best-answer MCQ",
+    "stem_structure": [
+      "Setting (GP, emergency department, ward, rural service) when relevant",
+      "Patient age and relevant history",
+      "Clinical findings and vital signs or investigations sufficient to discriminate correct answer",
+      "One focused task (diagnosis, investigation, interpretation, management, safety, ethics)",
+      "Avoid unnecessary red herrings and irrelevant numerical padding"
+    ],
+    "question_style_mix": [
+      "Short applied-clinical reasoning (similar to recall topics but fully reconstructed)",
+      "Medium practical clinical case",
+      "Long multi-factor decision case",
+      "Image interpretation only when actual image available"
+    ],
+    "difficulty_progression": {
+      "easy": "Typical presentation; one clear clinical inference",
+      "medium": "Differential of several plausible diagnoses or actions; one decisive discriminator",
+      "hard": "Comorbidities, management sequencing, contraindications, competing risks, or subtle data interpretation, with one best answer",
+      "very_hard": "2-step integrated reasoning and priority of action; all alternatives plausible but only one best in given context"
+    },
+    "validation_gates": [
+      "Shuffle correct answer option positions",
+      "Require precisely five plausible options",
+      "Require an unambiguous one-best-answer stem",
+      "Reject missing imaging for image-dependent prompts",
+      "Clinical fact-check medicine decisions against reliable Australian guidelines when feasible",
+      "Do not use flagged entries or unverified answer keys as the sole clinical authority",
+      "Provide explanation of correct option and why close distractors are wrong",
+      "Include at least some population health, ethics, mental health and child health",
+      "Use official blueprint for full-length 150-question mock domain balance",
+      "Adaptive exercises may simulate progression but cannot claim real calibrated CAT psychometrics"
+    ],
+    "full_mock_150_approx_counts": {
+      "Adult Health - Medicine": 45,
+      "Adult Health - Surgery": 30,
+      "Women’s Health - O&G": 19,
+      "Child Health": 19,
+      "Mental Health": 19,
+      "Population Health & Ethics": 18
+    },
+    "reference_strategy": "Use AMC official MCQ blueprint for format/domain weights, eMedici bank for full-vignette style, AMC SUCCESS bank for topic variants and recall-like concise decision hooks. Validate all clinical keys independently.",
+    "version": "AMC-generation-v2-adjustable-difficulty",
+    "difficulty_control": "Use difficulty_engine.config.difficulty_level (1..5), difficulty_intensity (0..100), and mode; these override earlier descriptive categories."
+  },
+  "schema_version": "2.0",
+  "difficulty_engine": {
+    "engine_version": "2.0.0",
+    "purpose": "Control the intellectual difficulty of original practice MCQs independently of the actual exam format.",
+    "config": {
+      "difficulty_level": 3,
+      "allowed_levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "difficulty_intensity": 50,
+      "intensity_range": [
+        0,
+        100
+      ],
+      "mode": "challenge",
+      "allowed_modes": [
+        "exam_faithful",
+        "challenge",
+        "adaptive_practice"
+      ],
+      "topic": "mixed",
+      "question_count": 10,
+      "delivery": "one_by_one",
+      "show_answer_before_attempt": false,
+      "answer_review": "after_each_answer",
+      "language": "English",
+      "verify_medical_facts": true,
+      "user_overrides_exam_format": false
+    },
+    "difficulty_levels": {
+      "1": {
+        "label": "Foundation",
+        "reasoning_steps_range": [
+          1,
+          1
+        ],
+        "integration": "One standard concept",
+        "distractor_design": "Two plausible distractors, remainder straightforward",
+        "example_task": "Recognise a classic pattern or basic mechanism",
+        "stem_length_rule": "Usually short; include only relevant facts",
+        "target": "revision"
+      },
+      "2": {
+        "label": "Standard exam",
+        "reasoning_steps_range": [
+          1,
+          2
+        ],
+        "integration": "One or two linked concepts; a clear discriminator",
+        "distractor_design": "All clinically related, usually one close competitor",
+        "example_task": "Best diagnosis or next step with one decisive finding",
+        "stem_length_rule": "Short or moderate; concise",
+        "target": "representative exam-style practice"
+      },
+      "3": {
+        "label": "Hard",
+        "reasoning_steps_range": [
+          2,
+          3
+        ],
+        "integration": "Use paired mechanism and application, or diagnostic comparison",
+        "distractor_design": "Two closely competing alternatives, differing in a decisive cue",
+        "example_task": "Select investigation or management when options are superficially reasonable",
+        "stem_length_rule": "Concise or moderate, occasional longer case",
+        "target": "above-average competitive preparation"
+      },
+      "4": {
+        "label": "Very hard",
+        "reasoning_steps_range": [
+          3,
+          4
+        ],
+        "integration": "Link multiple domains, risk modifiers, timing, or interpretation",
+        "distractor_design": "Three or four credible options; decisive constraints hidden in genuine clinical facts",
+        "example_task": "Choose the safest option after interpreting clinical history, lab data and competing risks",
+        "stem_length_rule": "Length only when information contributes to the decision",
+        "target": "top-rank challenge; harder-than-typical-recall by design"
+      },
+      "5": {
+        "label": "Extreme",
+        "reasoning_steps_range": [
+          4,
+          5
+        ],
+        "integration": "Nested reasoning with competing diagnoses/actions, management sequencing, or exceptions",
+        "distractor_design": "Every alternative credible in a nearby scenario; one unequivocally correct for the actual facts",
+        "example_task": "Resolve two-way ambiguity with a discriminating finding and timing or safety nuance",
+        "stem_length_rule": "No irrelevant padding; complexity derives from reasoning not word count",
+        "target": "unvalidated super-exam challenge, NOT a claim of actual exam difficulty"
+      }
+    },
+    "fine_tuning": {
+      "difficulty_intensity_interpretation": "Within a chosen level, 0 is the easiest permissible case and 100 the hardest permissible case; level governs upper bounds on reasoning steps and prevents unsupported edge-case minutiae.",
+      "recommended_intensity": {
+        "exam_faithful": 40,
+        "challenge": 75,
+        "adaptive_practice": 50
+      },
+      "difficulty_increase_order": [
+        "make distractors closer while preserving a unique answer",
+        "increase the number of clinically relevant interacting constraints",
+        "require integrating at least two established facts",
+        "add genuine conditional decisions or time-sensitive prioritisation",
+        "add numerical or visual interpretation only when supported by real data/media"
+      ],
+      "never_increase_by": [
+        "missing information",
+        "undefined abbreviations",
+        "obscure unsupported trivia",
+        "artificially long stems",
+        "trick grammar",
+        "invalid drugs/doses",
+        "two equally defensible answer choices",
+        "fabricated images or guidelines"
+      ],
+      "floor_and_ceiling": "Do not go beyond the core MBBS/AMC candidate competency merely to make an item obscure; if level 5 cannot be created accurately on a topic, report limitation or choose another high-value competency."
+    },
+    "modes": {
+      "exam_faithful": {
+        "description": "Preserve official question type, subject domains, exam timing and exam-like difficulty distribution. User-selected global level is a target; do not claim it measures actual exam item parameters.",
+        "difficulty_mix_levels_1to5": [
+          0.08,
+          0.45,
+          0.35,
+          0.1,
+          0.02
+        ],
+        "allow_uniform_level_override": false
+      },
+      "challenge": {
+        "description": "Preserve official question types and five/four choices while using the chosen level for most items. It is intentionally harder or easier than a representative exam.",
+        "difficulty_mix_levels_1to5": "uniform requested difficulty +/- 1 for variety",
+        "allow_uniform_level_override": true
+      },
+      "adaptive_practice": {
+        "description": "Educational adaptation from observed answers, not official psychometrically calibrated CAT.",
+        "difficulty_mix_levels_1to5": "adjust from previous performance",
+        "allow_uniform_level_override": true
+      }
+    },
+    "adaptive_practice_rules": {
+      "start_at_requested_level": true,
+      "increase_if": "3 consecutively correct answers with appropriate reasoning",
+      "decrease_if": "2 consecutive incorrect answers or user reports guessing",
+      "step_size": 1,
+      "bounds": [
+        1,
+        5
+      ],
+      "do_not_adapt_from_one_guess": true,
+      "track": [
+        "difficulty_level",
+        "topic",
+        "answer_correct",
+        "confidence_optional",
+        "reasoning_error_type",
+        "response_time_optional"
+      ],
+      "disclaimer": "This is a teaching progression and is not equated to an official computerized adaptive test or a validated score."
+    },
+    "clinical_integrity_checks": [
+      "Resolve the question and identify the unique best answer before constructing distractors.",
+      "Independently re-check that the supplied stem contains adequate discriminating information.",
+      "For each incorrect option write the specific reason it fails in this scenario; revise if more than one is equally defensible.",
+      "Verify calculations, reference ranges, dosing, contraindications, clinical urgency and units.",
+      "For guideline-sensitive current recommendations, verify against authoritative locally applicable published guidance; flag any unverified detail.",
+      "Never treat a memory-based recall key or AI-generated explanation as an authoritative clinical reference.",
+      "Do not fabricate image, ECG, histology or radiology findings while claiming a real supplied image exists.",
+      "Randomise correct-option location across a batch and prevent answer-position clues.",
+      "Use original stems; do not copy or closely paraphrase protected third-party recall text.",
+      "If the item cannot be made both difficult and medically unambiguous, reduce difficulty or flag for human review."
+    ],
+    "generation_workflow": [
+      "Load this file and accept user config overrides only for editable fields.",
+      "Select exam-specific official-safe question format and blueprint constraints.",
+      "Choose competency and clinically valid correct concept first.",
+      "Choose difficulty level and intensity; implement clinically defensible levers.",
+      "Create stem + exam-appropriate options + correct key privately.",
+      "Run two-pass quality control including a second solution attempt and distractor challenge.",
+      "Show question alone when answer is withheld; reveal explanation after user answers.",
+      "Repeat; for mocks follow specified exam timing and section lock behaviour."
+    ],
+    "question_output_schema": {
+      "id": "unique-question-id",
+      "exam": "AMC Part 1",
+      "subject": "string",
+      "topic": "string",
+      "difficulty_level": 3,
+      "difficulty_intensity": 50,
+      "question_type": "exam-valid type",
+      "stem": "original question text",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answerIndex": "integer 0-based for single-best-answer; null if multiple-correct",
+      "answerIndices": "array of 0-based ints only for multiple-correct; otherwise null",
+      "explanation": "rationale after answer",
+      "distractor_analysis": {
+        "A": "why right/wrong",
+        "B": "why right/wrong",
+        "C": "why right/wrong",
+        "D": "why right/wrong",
+        "E": "why right/wrong"
+      },
+      "reasoning_steps": [
+        "brief teaching-level steps (not private model scratchpad)"
+      ],
+      "critical_discriminator": "the decisive fact",
+      "calibration_status": "designed_level_not_empirically_calibrated",
+      "source_type": "original_generated_practice",
+      "medical_verification_status": "verified_with_reference_or_unverified",
+      "needs_human_review": false
+    },
+    "amc_specific_hardness_levers": {
+      "level_3": [
+        "one key management modifier",
+        "investigation choice in close differential",
+        "contraindication"
+      ],
+      "level_4": [
+        "stabilisation versus definitive intervention",
+        "age/comorbidity changes the next best step",
+        "anticoagulant interactions, pregnancy, renal function"
+      ],
+      "level_5": [
+        "multiple plausible immediate actions with a single sequencing priority",
+        "ethical or systems constraint combined with clinical risk",
+        "care-setting and transfer time change the correct answer"
+      ]
+    }
+  },
+  "exam_specific_constraints": {
+    "official_pattern_ref": "https://www.amc.org.au/wp-content/uploads/2025/09/2025-09-09-MCQ-Specifications-V8.pdf",
+    "official_style": "Single-best-answer clinical MCQ; 5 options; question difficulty selection is adaptive on actual exam but independently calibrated item parameters are not public here.",
+    "questions_per_mock": 150,
+    "minutes_per_mock": 210,
+    "options_per_question": 5,
+    "allowed_question_types": [
+      "single_best_answer"
+    ],
+    "multiple_correct_allowed": false,
+    "scoring": "Actual AMC uses scaled CAT assessment; do not invent a +1/-1 raw scoring model or predict a pass mark.",
+    "domain_weights": {
+      "Adult Health - Medicine": 30,
+      "Adult Health - Surgery": 20,
+      "Women’s Health - O&G": 12.5,
+      "Child Health": 12.5,
+      "Mental Health": 12.5,
+      "Population Health & Ethics": 12.5
+    },
+    "clinical_context": [
+      "Australian general practice",
+      "Emergency department",
+      "Rural or remote hospital",
+      "Inpatient medicine/surgery",
+      "Women and child health",
+      "Population health and ethics"
+    ],
+    "prioritize": [
+      "differential diagnosis",
+      "most appropriate next investigation",
+      "best immediate intervention",
+      "safety/contraindication",
+      "management sequence",
+      "referral urgency",
+      "ethical judgement and consent"
+    ],
+    "jurisdiction": "Australian guidelines and accepted clinical practice; regional variation flagged",
+    "no_backtracking": true,
+    "original_uploads": {
+      "AMC-SUCCESS-bank.json": 1170,
+      "eMedici-bank.json": 1992
+    },
+    "source_quality_warning": "Both uploaded sources contain unverified or incompletely extracted material. Flagged items and contradictory answer keys must not be copied as answers.",
+    "exam_faithful_vs_challenge": "In exam_faithful mode preserve 150 questions and domain weights; choose challenge mode for uniformly extreme difficulty without misrepresenting actual CAT."
+  },
+  "generator_instructions": "You are creating ORIGINAL AMC Part 1 practice MCQs from this JSON profile. Use difficulty_engine.config and exam_specific_constraints. Treat difficulty_level (integer 1..5) as an editable control and difficulty_intensity (0..100) as a fine adjustment. Honor mode: exam_faithful for blueprint-style distribution; challenge for predominantly chosen difficulty; adaptive_practice for educational progression based on user answers. NEVER change exam option count, correct-answer rules, timing, or navigational sections just because difficulty increases. Each item must be medically defensible with one unique best answer unless the exam explicitly permits multiple-correct. Generate original questions inspired by concepts and structures, not literal copied PYQs. Verify answer against appropriate references where needed. If delivery=one_by_one, ask one question and hide the key until candidate answers; then present clear rationale and why attractive distractors are wrong. Do not label difficulty as officially calibrated. Do not pretend a text-described image is a real image."
+}
